@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Photographer — Inspired Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">A. Photographer</div>
+      <nav class="nav">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner container">
+        <h1 class="hero-title">Moments from the World</h1>
+        <p class="hero-sub">Documentary & travel photography — a visual archive of light, people and place.</p>
+      </div>
+      <div class="hero-edge"></div>
+    </section>
+
+    <section id="portfolio" class="gallery container">
+      <!-- Simple responsive masonry-like gallery -->
+      <div class="masonry">
+        <figure><img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?w=1200&q=80&auto=format&fit=crop" alt="Photo 1" loading="lazy"><figcaption>Desert landscape — 2023</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200&q=80&auto=format&fit=crop" alt="Photo 2" loading="lazy"><figcaption>Portrait — 2019</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1504198266280-5d7b6bfb3d95?w=1200&q=80&auto=format&fit=crop" alt="Photo 3" loading="lazy"><figcaption>Market scene — 2021</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?w=1200&q=80&auto=format&fit=crop" alt="Photo 4" loading="lazy"><figcaption>Coastline — 2020</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80&auto=format&fit=crop" alt="Photo 5" loading="lazy"><figcaption>Street — 2018</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&w=1200&q=80&auto=format&fit=crop" alt="Photo 6" loading="lazy"><figcaption>Study — 2017</figcaption></figure>
+      </div>
+      <div class="more-note">Click an image to open fullscreen.</div>
+    </section>
+
+    <section id="about" class="about container">
+      <h2>About</h2>
+      <p>Short bio: travel and documentary photographer exploring culture and human stories. This sample site is an original work inspired by the clean, image-forward presentation common to many portfolio sites.</p>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> A. Photographer — All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Simple lightbox -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lb-close" aria-label="Close">×</button>
+    <img class="lb-img" src="" alt="">
+    <div class="lb-caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
