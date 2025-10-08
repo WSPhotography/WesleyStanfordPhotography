@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Photographer — Inspired Portfolio v2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">A. Photographer</div>
+      <nav class="nav">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#journal">Journal</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Fullscreen hero -->
+    <section class="hero" id="home" aria-label="Hero">
+      <div class="hero-media" role="img" aria-label="Hero image" style="background-image:url('https://images.unsplash.com/photo-1504198266280-5d7b6bfb3d95?w=1600&q=80&auto=format&fit=crop');"></div>
+      <div class="hero-overlay">
+        <div class="container hero-inner">
+          <div class="hero-logo">A. Photographer</div>
+          <h1 class="hero-title">Fragments of the World</h1>
+          <p class="hero-sub">Documentary and travel photography — intimate, immediate, human.</p>
+          <a class="cta" href="#portfolio">View Portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery: large responsive grid with subtle overlap -->
+    <section id="portfolio" class="portfolio container">
+      <h2 class="section-title">Portfolio</h2>
+      <div class="grid">
+        <a class="tile large" href="#" data-full="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?w=2000&q=80&auto=format&fit=crop" data-caption="Desert, 2023">
+          <img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?w=900&q=60&auto=format&fit=crop" alt="Desert landscape">
+          <span class="tile-caption">Desert — 2023</span>
+        </a>
+        <a class="tile" href="#" data-full="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=2000&q=80&auto=format&fit=crop" data-caption="Portrait, 2019">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900&q=60&auto=format&fit=crop" alt="Portrait">
+          <span class="tile-caption">Portrait — 2019</span>
+        </a>
+        <a class="tile tall" href="#" data-full="https://images.unsplash.com/photo-1504198266280-5d7b6bfb3d95?w=2000&q=80&auto=format&fit=crop" data-caption="Market, 2021">
+          <img src="https://images.unsplash.com/photo-1504198266280-5d7b6bfb3d95?w=900&q=60&auto=format&fit=crop" alt="Market scene">
+          <span class="tile-caption">Market — 2021</span>
+        </a>
+        <a class="tile" href="#" data-full="https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?w=2000&q=80&auto=format&fit=crop" data-caption="Coastline, 2020">
+          <img src="https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?w=900&q=60&auto=format&fit=crop" alt="Coastline">
+          <span class="tile-caption">Coastline — 2020</span>
+        </a>
+        <a class="tile" href="#" data-full="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=2000&q=80&auto=format&fit=crop" data-caption="Street, 2018">
+          <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=900&q=60&auto=format&fit=crop" alt="Street">
+          <span class="tile-caption">Street — 2018</span>
+        </a>
+        <a class="tile" href="#" data-full="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=2000&q=80&auto=format&fit=crop" data-caption="Study, 2017">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=900&q=60&auto=format&fit=crop" alt="Study">
+          <span class="tile-caption">Study — 2017</span>
+        </a>
+      </div>
+      <p class="gallery-note">Click any image to open the fullscreen viewer. Use arrow keys to navigate.</p>
+    </section>
+
+    <!-- Journal/Editorial section -->
+    <section id="journal" class="journal container">
+      <h2 class="section-title">Journal</h2>
+      <article class="entry">
+        <div class="entry-hero" style="background-image:url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80&auto=format&fit=crop');"></div>
+        <div class="entry-body">
+          <h3 class="entry-title">On Light and Memory</h3>
+          <p class="entry-excerpt">A short piece about working quietly in markets and the decisions behind portrait moments. This template includes a simple editorial area for text and longer captions.</p>
+          <a href="#" class="readmore">Read more →</a>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-hero" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200&q=80&auto=format&fit=crop');"></div>
+        <div class="entry-body">
+          <h3 class="entry-title">Travel Notes — 2019</h3>
+          <p class="entry-excerpt">Notes from a season traveling the highlands and working in daylight and dusk. This area is designed to feel like a magazine column.</p>
+          <a href="#" class="readmore">Read more →</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- Contact & footer -->
+    <section id="contact" class="contact container">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-line">Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> A. Photographer — All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Fullscreen viewer/lightbox with navigation -->
+  <div id="viewer" class="viewer" aria-hidden="true">
+    <button class="v-close" aria-label="Close viewer">×</button>
+    <button class="v-prev" aria-label="Previous image">‹</button>
+    <img class="v-img" src="" alt="">
+    <button class="v-next" aria-label="Next image">›</button>
+    <div class="v-caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
